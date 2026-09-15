@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台北 3泊4日 旅のしおり</title>
+<meta name="description" content="2026年9月18日〜21日 台北3泊4日 旅行しおり">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <p class="hero-eyebrow">🇹🇼 旅のしおり</p>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="テーマ切り替え">🌙</button>
+  </div>
+  <h1 class="hero-title">台北 3泊4日</h1>
+  <p class="hero-dates">2026年9月18日(金) 〜 9月21日(月・祝)</p>
+  <p id="hero-status" class="hero-status">読み込み中…</p>
+</header>
+
+<div id="twac-banner" class="banner" hidden>
+  <p id="twac-banner-text" class="banner-text"></p>
+  <button id="twac-dismiss" class="banner-dismiss" type="button" aria-label="閉じる">✕</button>
+</div>
+
+<nav class="tabnav" aria-label="セクションナビゲーション">
+  <div class="tabnav-scroll" id="tabnav-scroll">
+    <a href="#overview" class="tab-chip" data-target="overview">📋 概要</a>
+    <a href="#flight" class="tab-chip" data-target="flight">✈️ フライト</a>
+    <a href="#hotel" class="tab-chip" data-target="hotel">🏨 ホテル</a>
+    <a href="#schedule" class="tab-chip" data-target="schedule">🗓️ 日程</a>
+    <a href="#transport" class="tab-chip" data-target="transport">🚌 移動</a>
+    <a href="#money" class="tab-chip" data-target="money">💰 お金</a>
+    <a href="#food" class="tab-chip" data-target="food">🍽 グルメ</a>
+    <a href="#souvenir" class="tab-chip" data-target="souvenir">🎁 お土産</a>
+    <a href="#packing" class="tab-chip" data-target="packing">🧳 持ち物</a>
+    <a href="#mobile" class="tab-chip" data-target="mobile">📱 通信</a>
+    <a href="#spots" class="tab-chip" data-target="spots">🗺️ スポット</a>
+    <a href="#emergency" class="tab-chip" data-target="emergency">🆘 緊急</a>
+    <a href="#pretrip" class="tab-chip" data-target="pretrip">📝 事前チェック</a>
+  </div>
+</nav>
+
+<main class="page">
+
+  <!-- 概要 -->
+  <section id="overview" class="card-section">
+    <h2 class="section-title">📋 旅行概要</h2>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">行き先</span><span class="info-value">台湾・台北</span></div>
+      <div class="info-row"><span class="info-label">旅行期間</span><span class="info-value">3泊4日</span></div>
+      <div class="info-row"><span class="info-label">出発地</span><span class="info-value">大阪</span></div>
+      <div class="info-row"><span class="info-label">同行者</span><span class="info-value">R.T ／ S.R</span></div>
+      <div class="info-row"><span class="info-label">航空会社</span><span class="info-value">[行]タイガーエア航空／[帰]Peach</span></div>
+      <div class="info-row"><span class="info-label">往路</span><span class="info-value">9月18日 PM21:05発 Terminal 1(IT213)</span></div>
+      <div class="info-row"><span class="info-label">復路</span><span class="info-value">9月21日 AM09:30発 Terminal 1(MM24)</span></div>
+      <div class="info-row"><span class="info-label">宿泊先</span><span class="info-value">ローダーズプラスホテルテーマ館</span></div>
+      <div class="info-row"><span class="info-label">現地通貨</span><span class="info-value">台湾ドル(TWD / NT$)</span></div>
+      <div class="info-row"><span class="info-label">日本との時差</span><span class="info-value">−1時間</span></div>
+    </div>
+
+    <h3 class="subsection-title">⚠️ 入国前の必須手続き</h3>
+    <p class="progress-label" data-progress-for="entry"></p>
+    <ul class="checklist" data-section="entry">
+      <li class="check-item">
+        <label class="check-label">
+          <input type="checkbox" class="check-input" data-id="entry-twac">
+          <span class="check-box" aria-hidden="true"></span>
+          <span class="check-text">台湾入国カード(TWAC)のオンライン事前登録 — 2025年10月から紙の入国カードは廃止されオンライン一本化。到着日を含む3日前から登録可能(9/18到着なら9/15以降でOK)</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <label class="check-label">
+          <input type="checkbox" class="check-input" data-id="entry-passport">
+          <span class="check-box" aria-hidden="true"></span>
+          <span class="check-text">パスポートの残存有効期間を確認</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <label class="check-label">
+          <input type="checkbox" class="check-input" data-id="entry-insurance">
+          <span class="check-box" aria-hidden="true"></span>
+          <span class="check-text">海外旅行保険の加入・証券を準備</span>
+        </label>
+      </li>
+    </ul>
+  </section>
+
+  <!-- フライト -->
+  <section id="flight" class="card-section">
+    <h2 class="section-title">✈️ フライト</h2>
+
+    <div class="flight-card">
+      <p class="flight-card-title">往路 🇯🇵 → 🇹🇼　2026年9月18日(金)</p>
+      <div class="info-grid">
+        <div class="info-row"><span class="info-label">航空会社</span><span class="info-value">タイガーエア航空</span></div>
+        <div class="info-row"><span class="info-label">便名</span><span class="info-value">IT213</span></div>
+        <div class="info-row"><span class="info-label">出発</span><span class="info-value">関西国際空港 PM21:05</span></div>
+        <div class="info-row"><span class="info-label">到着</span><span class="info-value">台湾桃園国際空港 PM23:05</span></div>
+      </div>
+      <p class="hint-text">参考: <a href="https://www.tigerairtw.com/ja-JP/welcome-on-board/boarding" target="_blank" rel="noopener noreferrer">タイガーエア 搭乗案内</a></p>
+      <p class="progress-label" data-progress-for="airport-out"></p>
+      <ul class="checklist" data-section="airport-out">
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">チェックイン</span></label></li>
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">荷物を預ける</span></label></li>
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">保安検査</span></label></li>
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">出国手続き</span></label></li>
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">搭乗口を確認</span></label></li>
+        <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="airport-out-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">台湾ドルを準備</span></label></li>
+      </ul>
+    </div>
+
+    <div class="flight-card">
+      <p class="flight-card-title">復路 🇹🇼 → 🇯🇵　2026年9月21日(月・祝)</p>
+      <div class="info-grid">
+        <div class="info-row"><span class="info-label">航空会社</span><span class="info-value">Peach</span></div>
+        <div class="info-row"><span class="info-label">便名</span><span class="info-value">MM24</span></div>
+        <div class="info-row"><span class="info-label">出発</span><span class="info-value">台湾桃園国際空港 AM09:30</span></div>
+        <div class="info-row"><span class="info-label">到着</span><span class="info-value is-pending">関西国際空港(要確認)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ホテル -->
+  <section id="hotel" class="card-section">
+    <h2 class="section-title">🏨 ホテル</h2>
+
+    <div class="hotel-name-block">
+      <p class="hotel-name">ローダーズプラスホテルテーマ館<span class="hotel-name-sub">路徒Plus行旅主題館 ／ ROADERS PLUS HOTEL THEME</span></p>
+      <a class="map-link" data-map-query="ローダーズプラスホテルテーマ館 台北市中正区忠孝西路一段80号" target="_blank" rel="noopener noreferrer">📍 Googleマップで見る</a>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">住所</span><span class="info-value">台湾 台北市中正区忠孝西路一段80号4F、5F-12F</span></div>
+      <div class="info-row"><span class="info-label">TEL</span><span class="info-value"><a href="tel:+886223311788">+886-2-23311788</a></span></div>
+      <div class="info-row"><span class="info-label">チェックイン</span><span class="info-value">2026年9月18日(金)</span></div>
+      <div class="info-row"><span class="info-label">チェックアウト</span><span class="info-value">2026年9月21日(月)</span></div>
+      <div class="info-row"><span class="info-label">部屋タイプ</span><span class="info-value">Standard Double Room Without Window</span></div>
+      <div class="info-row"><span class="info-label">予約番号</span><span class="info-value">RYa0n91bzs_2</span></div>
+    </div>
+
+    <h3 class="subsection-title">ホテルまでの行き方</h3>
+    <p class="route-text">空港 → ○○ → ○○駅 → ホテル</p>
+
+    <h3 class="subsection-title">ホテルで確認すること</h3>
+    <p class="progress-label" data-progress-for="hotel-check"></p>
+    <ul class="checklist" data-section="hotel-check">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">チェックイン</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポート提示</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">支払い</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">Wi-Fi</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">荷物預け</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="hotel-check-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">チェックアウト時間</span></label></li>
+    </ul>
+  </section>
+
+  <!-- 日程 -->
+  <section id="schedule" class="card-section">
+    <h2 class="section-title">🗓️ 旅行スケジュール</h2>
+
+    <div class="day-tabs" role="tablist" aria-label="日程タブ">
+      <button type="button" class="day-tab" data-day-target="day-1">DAY1<span class="day-tab-date">9/18(金)</span></button>
+      <button type="button" class="day-tab" data-day-target="day-2">DAY2<span class="day-tab-date">9/19(土)</span></button>
+      <button type="button" class="day-tab" data-day-target="day-3">DAY3<span class="day-tab-date">9/20(日)</span></button>
+      <button type="button" class="day-tab" data-day-target="day-4">DAY4<span class="day-tab-date">9/21(月)</span></button>
+    </div>
+
+    <article class="day-card" id="day-1" data-date="2026-09-18">
+      <div class="day-card-header">
+        <p class="day-card-title">DAY 1　9月18日(金)</p>
+        <span class="today-badge" hidden>TODAY</span>
+      </div>
+      <p class="day-card-sub">🇯🇵 大阪 → 🇹🇼 台北</p>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">✈️ 大阪出発</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🇹🇼 桃園空港到着</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🛂 入国審査・荷物受取</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🚌 空港 → 台北市内</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🏨 ホテルチェックイン</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🍜 夕食・買い出し</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🛌 ホテルへ</span></li>
+      </ul>
+    </article>
+
+    <article class="day-card" id="day-2" data-date="2026-09-19">
+      <div class="day-card-header">
+        <p class="day-card-title">DAY 2　9月19日(土)</p>
+        <span class="today-badge" hidden>TODAY</span>
+      </div>
+      <p class="day-card-sub">🇹🇼 台北観光 🛍</p>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-time">朝</span><span class="timeline-text">🍴 朝食・相方さんの予定開始</span></li>
+        <li class="timeline-item"><span class="timeline-time">昼</span><span class="timeline-text">🍜 昼食・相方さんの予定</span></li>
+        <li class="timeline-item"><span class="timeline-time">午後</span><span class="timeline-text">🛍️ 観光・ショッピング・お土産</span></li>
+        <li class="timeline-item"><span class="timeline-time">夜</span><span class="timeline-text">🍴 夕食・台北散策</span></li>
+        <li class="timeline-item"><span class="timeline-time">夜</span><span class="timeline-text">🏨 ホテルへ</span></li>
+      </ul>
+    </article>
+
+    <article class="day-card" id="day-3" data-date="2026-09-20">
+      <div class="day-card-header">
+        <p class="day-card-title">DAY 3　9月20日(日)</p>
+        <span class="today-badge" hidden>TODAY</span>
+      </div>
+      <p class="day-card-sub">🚸 観光 ⚔️</p>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-time">08:00</span><span class="timeline-text">🏨 ホテル出発</span></li>
+        <li class="timeline-item"><span class="timeline-time">09:00〜11:30</span><span class="timeline-text">⛰ 九份・BUMP・DQW</span></li>
+        <li class="timeline-item"><span class="timeline-time">11:30〜13:00</span><span class="timeline-text">🚌 台北へ移動・🍜 昼食</span></li>
+        <li class="timeline-item"><span class="timeline-time">13:00〜14:30</span><span class="timeline-text">🏛️ 故宮博物院・DQW</span></li>
+        <li class="timeline-item"><span class="timeline-time">15:00〜15:45</span><span class="timeline-text">🏛️ 中正紀念堂・DQW</span></li>
+        <li class="timeline-item"><span class="timeline-time">16:00〜17:00</span><span class="timeline-text">🎸 華山1914・Legacy Taipei</span></li>
+        <li class="timeline-item"><span class="timeline-time">17:30〜19:00</span><span class="timeline-text">🗼 台北101・BUMP巡礼</span></li>
+        <li class="timeline-item"><span class="timeline-time">19:00〜</span><span class="timeline-text">🍴 夕食・ホテルへ</span></li>
+      </ul>
+    </article>
+
+    <article class="day-card" id="day-4" data-date="2026-09-21">
+      <div class="day-card-header">
+        <p class="day-card-title">DAY 4　9月21日(月・祝)</p>
+        <span class="today-badge" hidden>TODAY</span>
+      </div>
+      <p class="day-card-sub">🇹🇼 台北 → 🇯🇵 大阪</p>
+      <ul class="timeline">
+        <li class="timeline-item"><span class="timeline-time">朝</span><span class="timeline-text">🍴 朝食・🧳 荷物整理</span></li>
+        <li class="timeline-item"><span class="timeline-time">午前</span><span class="timeline-text">🛍️ 最後の観光・ショッピング</span></li>
+        <li class="timeline-item"><span class="timeline-time">昼</span><span class="timeline-text">🍜 最後の台湾ランチ</span></li>
+        <li class="timeline-item"><span class="timeline-time">午後</span><span class="timeline-text">🎁 お土産最終チェック・空港へ</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🚌 台北 → 桃園空港</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">✈️ 台湾出発</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🇯🇵 大阪到着</span></li>
+        <li class="timeline-item"><span class="timeline-time is-pending">○○:○○</span><span class="timeline-text">🏠 旅行終了！</span></li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- 移動 -->
+  <section id="transport" class="card-section">
+    <h2 class="section-title">🚌 台湾での移動</h2>
+
+    <h3 class="subsection-title">空港 → 台北市内</h3>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">利用交通機関</span><span class="info-value">MRT／空港バス／タクシー／Uber</span></div>
+      <div class="info-row"><span class="info-label">所要時間</span><span class="info-value is-pending">約○分</span></div>
+      <div class="info-row"><span class="info-label">料金</span><span class="info-value is-pending">約NT$○○</span></div>
+    </div>
+
+    <h3 class="subsection-title">台北市内 主な移動手段</h3>
+    <ul class="plain-list">
+      <li>🚇 <strong>MRT</strong> — 台北観光の基本。主要観光地への移動に利用。</li>
+      <li>🚗 <strong>Uber</strong> — 荷物が多いとき・夜間などに利用。</li>
+      <li>🚌 <strong>バス</strong> — 時間に余裕があるときに利用。</li>
+    </ul>
+
+    <div class="tip-box">
+      <p>💳 <strong>悠遊卡(EasyCard)</strong> — 桃園空港到着後にMRT駅やコンビニで購入しておくと、MRT・バスの乗車がスムーズ(コンビニ決済にも使える)。今回はMRT移動が多いので現金より断然楽。</p>
+    </div>
+  </section>
+
+  <!-- お金 -->
+  <section id="money" class="card-section">
+    <h2 class="section-title">💰 お金・支払い</h2>
+
+    <h3 class="subsection-title">現金</h3>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">日本円→台湾ドル 両替</span><span class="info-value is-pending">未定</span></div>
+      <div class="info-row"><span class="info-label">ATM</span><span class="info-value is-pending">未定</span></div>
+      <div class="info-row"><span class="info-label">予備現金</span><span class="info-value is-pending">未定</span></div>
+    </div>
+
+    <h3 class="subsection-title">カード</h3>
+    <ul class="plain-list">
+      <li>クレジットカード(Visa／Mastercard)</li>
+      <li>Apple Pay</li>
+    </ul>
+
+    <h3 class="subsection-title">旅行中のお金(予算)</h3>
+    <div class="budget-table">
+      <div class="budget-row"><span class="budget-label">航空券</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">ホテル</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">食費</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">交通費</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">観光</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">お土産</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row"><span class="budget-label">その他</span><span class="budget-value is-pending">未定</span></div>
+      <div class="budget-row budget-total"><span class="budget-label">合計</span><span class="budget-value is-pending">未定</span></div>
+    </div>
+  </section>
+
+  <!-- グルメ -->
+  <section id="food" class="card-section">
+    <h2 class="section-title">🍽 台湾グルメ</h2>
+
+    <h3 class="subsection-title">食べたいもの</h3>
+    <div class="chip-list">
+      <span class="chip">小籠包</span>
+      <span class="chip">牛肉麺</span>
+      <span class="chip">魯肉飯</span>
+      <span class="chip">台湾唐揚げ</span>
+      <span class="chip">胡椒餅</span>
+      <span class="chip">夜市グルメ</span>
+      <span class="chip">タピオカ</span>
+      <span class="chip">マンゴーかき氷</span>
+      <span class="chip">パイナップルケーキ</span>
+    </div>
+
+    <h3 class="subsection-title">行きたいお店</h3>
+    <p class="empty-note">まだ決まっていません。気になるお店が見つかったら追記しましょう。</p>
+  </section>
+
+  <!-- お土産 -->
+  <section id="souvenir" class="card-section">
+    <h2 class="section-title">🎁 お土産</h2>
+
+    <h3 class="subsection-title">自分用</h3>
+    <div class="chip-list">
+      <span class="chip">パイナップルケーキ</span>
+      <span class="chip">台湾茶</span>
+      <span class="chip">お菓子</span>
+    </div>
+
+    <h3 class="subsection-title">家族・友人用</h3>
+    <p class="empty-note">未定</p>
+
+    <h3 class="subsection-title">お土産予算</h3>
+    <p class="empty-note">未定</p>
+  </section>
+
+  <!-- 持ち物 -->
+  <section id="packing" class="card-section">
+    <h2 class="section-title">🧳 持ち物チェックリスト</h2>
+    <p class="progress-label" data-progress-for="packing"></p>
+
+    <h3 class="subsection-title">必須・貴重品</h3>
+    <ul class="checklist" data-section="packing">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポート</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">航空券・予約確認書</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">財布・クレジットカード</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">台湾ドル(現金)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">海外旅行保険の証券</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポートのコピー・写真データ</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-must-7"><span class="check-box" aria-hidden="true"></span><span class="check-text">TWAC登録完了のスクリーンショット</span></label></li>
+    </ul>
+
+    <h3 class="subsection-title">服・靴</h3>
+    <ul class="checklist" data-section="packing">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">速乾Tシャツ・下着・靴下(2〜3日分、洗って使い回す)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">薄手のウインドブレーカー1枚</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">雨具(傘 or レインパーカー、どちらか一方)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">歩きやすいスニーカー1足(九份の石段対策)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">折りたたみサンダル(ホテル用)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-clothes-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">帽子・サングラス</span></label></li>
+    </ul>
+
+    <h3 class="subsection-title">洗面・衛生</h3>
+    <ul class="checklist" data-section="packing">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-hygiene-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">固形シャンプー・洗顔石鹸(液体制限回避)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-hygiene-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">歯ブラシ・歯磨き粉</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-hygiene-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">日焼け止め(100ml以下)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-hygiene-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">洗剤シート＋小型洗濯ネット</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-hygiene-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">常備薬(胃腸薬・頭痛薬・酔い止め・絆創膏)・虫よけ</span></label></li>
+    </ul>
+
+    <h3 class="subsection-title">電子機器</h3>
+    <ul class="checklist" data-section="packing">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-elec-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">スマートフォン</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-elec-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">モバイルバッテリー(大容量1個)</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="packing-elec-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">充電ケーブル・充電器(まとめて最小限に)</span></label></li>
+    </ul>
+
+    <div class="tip-box">
+      <p class="tip-title">荷造りメモ</p>
+      <ul class="plain-list">
+        <li>出発前にリュックの重さを計測(Tigerair・Peachとも機内持ち込み7kg前後が目安)</li>
+        <li>街歩き用の折りたたみサコッシュを1つ</li>
+        <li>お土産用のぺたんこサブバッグを1つ</li>
+        <li>液体は100ml以下＋ジップ袋にまとめる</li>
+      </ul>
+    </div>
+
+    <div class="tip-box tip-box-alt">
+      <p class="tip-title">現地調達でOK</p>
+      <ul class="plain-list">
+        <li>台湾ドルの小銭(コンビニ・両替所で調達可)</li>
+        <li>折りたたみ傘(現地のコンビニでも購入可)</li>
+        <li>悠遊卡(EasyCard)(桃園空港到着後に購入)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 通信 -->
+  <section id="mobile" class="card-section">
+    <h2 class="section-title">📱 スマホ・通信</h2>
+
+    <h3 class="subsection-title">eSIM</h3>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">サービス</span><span class="info-value">トリファ(trifa)</span></div>
+      <div class="info-row"><span class="info-label">利用期間</span><span class="info-value is-pending">未定</span></div>
+      <div class="info-row"><span class="info-label">データ容量</span><span class="info-value is-pending">未定</span></div>
+    </div>
+    <p class="hint-text">※台湾はSIM/eSIMの実名登録が義務化されているため、どのサービスでもパスポートでの本人確認が必要です。</p>
+
+    <h3 class="subsection-title">台湾到着後</h3>
+    <p class="progress-label" data-progress-for="mobile-arrival"></p>
+    <ul class="checklist" data-section="mobile-arrival">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="mobile-arrival-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">eSIMを有効化</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="mobile-arrival-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">モバイルデータを確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="mobile-arrival-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">日本SIMのデータローミングOFFを確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="mobile-arrival-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">Google Maps確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="mobile-arrival-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">翻訳アプリ確認</span></label></li>
+    </ul>
+  </section>
+
+  <!-- スポット -->
+  <section id="spots" class="card-section">
+    <h2 class="section-title">🗺️ 観光スポット</h2>
+    <ul class="spot-list">
+      <li class="spot-row"><span class="spot-name">台北101</span><a class="map-link" data-map-query="台北101" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">九份</span><a class="map-link" data-map-query="九份" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">士林夜市</span><a class="map-link" data-map-query="士林夜市" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">西門町</span><a class="map-link" data-map-query="西門町" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">中正紀念堂</span><a class="map-link" data-map-query="中正紀念堂" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">龍山寺</span><a class="map-link" data-map-query="龍山寺 台北" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">故宮博物院</span><a class="map-link" data-map-query="国立故宮博物院" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">Unbound Cafe(無序咖啡)</span><a class="map-link" data-map-query="Unbound Cafe 高雄" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+      <li class="spot-row"><span class="spot-name">高雄市新興区 中山一路・六合路交差点</span><a class="map-link" data-map-query="高雄市新興区 中山一路 六合路" target="_blank" rel="noopener noreferrer">📍 地図</a></li>
+    </ul>
+  </section>
+
+  <!-- 緊急 -->
+  <section id="emergency" class="card-section">
+    <h2 class="section-title">🆘 困ったとき</h2>
+
+    <h3 class="subsection-title">パスポート(日本台湾交流協会)</h3>
+    <div class="info-grid">
+      <div class="info-row"><span class="info-label">住所</span><span class="info-value is-pending">未定</span></div>
+      <div class="info-row"><span class="info-label">電話</span><span class="info-value is-pending">未定</span></div>
+    </div>
+
+    <h3 class="subsection-title">緊急時</h3>
+    <div class="emergency-buttons">
+      <a class="emergency-button" href="tel:110">
+        <span class="emergency-icon">🚓</span>
+        <span class="emergency-label">警察</span>
+        <span class="emergency-number">110</span>
+      </a>
+      <a class="emergency-button" href="tel:119">
+        <span class="emergency-icon">🚑</span>
+        <span class="emergency-label">消防・救急</span>
+        <span class="emergency-number">119</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 事前チェック -->
+  <section id="pretrip" class="card-section">
+    <h2 class="section-title">📝 旅行前チェック</h2>
+
+    <h3 class="subsection-title">1週間前</h3>
+    <p class="progress-label" data-progress-for="pretrip-week"></p>
+    <ul class="checklist" data-section="pretrip-week">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">航空券確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">ホテル確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">eSIM確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポート確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">台湾ドル準備</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-week-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">旅行ルート確認</span></label></li>
+    </ul>
+
+    <h3 class="subsection-title">前日</h3>
+    <p class="progress-label" data-progress-for="pretrip-day"></p>
+    <ul class="checklist" data-section="pretrip-day">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">荷造り</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">充電</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポート・財布・スマホ・航空券</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">ホテル予約確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-5"><span class="check-box" aria-hidden="true"></span><span class="check-text">天気確認</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-day-6"><span class="check-box" aria-hidden="true"></span><span class="check-text">TWACオンライン登録(まだの場合。3日前から可能)</span></label></li>
+    </ul>
+
+    <h3 class="subsection-title">出発当日</h3>
+    <p class="progress-label" data-progress-for="pretrip-today"></p>
+    <ul class="checklist" data-section="pretrip-today">
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-today-1"><span class="check-box" aria-hidden="true"></span><span class="check-text">パスポート・財布・スマホ・モバイルバッテリー</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-today-2"><span class="check-box" aria-hidden="true"></span><span class="check-text">航空券</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-today-3"><span class="check-box" aria-hidden="true"></span><span class="check-text">荷物</span></label></li>
+      <li class="check-item"><label class="check-label"><input type="checkbox" class="check-input" data-id="pretrip-today-4"><span class="check-box" aria-hidden="true"></span><span class="check-text">戸締まり</span></label></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <p>台北3泊4日 旅のしおり ／ 2026.09.18–09.21</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

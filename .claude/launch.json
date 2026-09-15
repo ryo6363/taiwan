@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "taiwan-trip",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5271", "--directory", "C:\\Users\\ryo63\\Documents\\GitHub\\taiwan"],
+      "port": 5271
+    }
+  ]
+}
